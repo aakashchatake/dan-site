@@ -1,0 +1,16 @@
+{
+  "random_seed": 456,
+  "n_rows": 150,
+  "columns": [
+    "X",
+    "Y",
+    "Group",
+    "Response",
+    "Category"
+  ],
+  "dataset_path": "../data/P02_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:02.455309Z",
+  "result_images": [
+    "P02_plot1.png"
+  ]
+}

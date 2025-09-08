@@ -1,0 +1,17 @@
+{
+  "random_seed": 707,
+  "n_rows": 150,
+  "columns": [
+    "Date",
+    "Category",
+    "SubCategory",
+    "Quantity",
+    "Price",
+    "Revenue"
+  ],
+  "dataset_path": "../data/P10_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:08.585111Z",
+  "result_images": [
+    "P10_plot1.png"
+  ]
+}

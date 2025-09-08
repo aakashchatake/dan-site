@@ -1,0 +1,14 @@
+{
+  "random_seed": 303,
+  "n_rows": 150,
+  "columns": [
+    "Category",
+    "Value1",
+    "Value2"
+  ],
+  "dataset_path": "../data/P06_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:05.585618Z",
+  "result_images": [
+    "P06_plot1.png"
+  ]
+}

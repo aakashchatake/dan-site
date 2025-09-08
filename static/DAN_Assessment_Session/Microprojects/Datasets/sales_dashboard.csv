@@ -1,0 +1,10 @@
+OrderID,Product,Region,Month,Quantity,UnitPrice
+1,Product A,North,Jan,5,100
+2,Product B,South,Jan,3,150
+3,Product C,East,Jan,4,200
+4,Product A,North,Feb,6,100
+5,Product B,South,Feb,2,150
+6,Product C,East,Feb,5,200
+7,Product A,North,Mar,4,100
+8,Product B,South,Mar,3,150
+9,Product C,East,Mar,7,200

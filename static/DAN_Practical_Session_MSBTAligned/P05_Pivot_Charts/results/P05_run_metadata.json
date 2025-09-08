@@ -1,0 +1,16 @@
+{
+  "random_seed": 202,
+  "n_rows": 205,
+  "columns": [
+    "Date",
+    "Product",
+    "Region",
+    "Sales",
+    "Quantity"
+  ],
+  "dataset_path": "../data/P05_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:04.825010Z",
+  "result_images": [
+    "P05_plot1.png"
+  ]
+}

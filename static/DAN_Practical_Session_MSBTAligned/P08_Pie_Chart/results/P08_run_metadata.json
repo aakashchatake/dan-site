@@ -1,0 +1,13 @@
+{
+  "random_seed": 505,
+  "n_rows": 4,
+  "columns": [
+    "Segment",
+    "Count"
+  ],
+  "dataset_path": "../data/P08_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:06.991631Z",
+  "result_images": [
+    "P08_plot1.png"
+  ]
+}

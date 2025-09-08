@@ -1,0 +1,169 @@
+/**
+ * Global CSS for Docusaurus site
+ * Includes Infima overrides and custom homepage styling
+ */
+
+/* === Brand palette (Mindforge Red) === */
+:root {
+  /* ---- set your brand red here ---- */
+  --mf-red: #B22222;           /* Mindforge Red (replace with exact hex if needed) */
+  --mf-red-600: #9f1f1f;       /* darker */
+  --mf-red-700: #8e1b1b;       /* darker */
+  --mf-red-400: #c53a3a;       /* lighter */
+  --mf-red-300: #d65a5a;       /* lighter */
+
+  /* Infima theme overrides -> use brand red */
+  --ifm-color-primary: var(--mf-red);
+  --ifm-color-primary-dark: var(--mf-red-600);
+  --ifm-color-primary-darker: var(--mf-red-700);
+  --ifm-color-primary-darkest: #6f1313;
+  --ifm-color-primary-light: var(--mf-red-400);
+  --ifm-color-primary-lighter: var(--mf-red-300);
+  --ifm-color-primary-lightest: #f1b0b0;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode palette tuned for contrast while staying on-brand */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff6b6b;          /* readable on dark bg */
+  --ifm-color-primary-dark: #ff5151;
+  --ifm-color-primary-darker: #ff3f3f;
+  --ifm-color-primary-darkest: #ff2d2d;
+  --ifm-color-primary-light: #ff8b8b;
+  --ifm-color-primary-lighter: #ffa0a0;
+  --ifm-color-primary-lightest: #ffbdbd;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Utility: brand sentence / word highlights ===== */
+.highlight-red { color: var(--mf-red); font-weight: 600; }
+.highlight-pill {
+  display: inline-block;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--mf-red) 12%, transparent);
+  color: var(--mf-red);
+  font-weight: 600;
+}
+
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Homepage layout */
+.homepage {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Cover image */
+.cover-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Intro block with profile image */
+.intro-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px; /* soft corners */
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Headings in brand red */
+.intro-text h2,
+.why-analytics h2,
+.explore-portal h2 {
+  font-size: 1.5rem;
+  color: var(--mf-red);
+  margin-bottom: 1rem;
+}
+
+.signature {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* Why Data Analytics section */
+.why-analytics {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Explore the Portal section */
+.explore-portal {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.explore-portal ul {
+  list-style: none;
+  padding: 0;
+}
+
+.explore-portal li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Links use brand color; underline on hover for a11y */
+.explore-portal a,
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+.explore-portal a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons (if you use .button classes) look cohesive */
+.button {
+  background: var(--mf-red);
+  border-color: var(--mf-red);
+}
+.button:hover {
+  background: var(--mf-red-600);
+  border-color: var(--mf-red-600);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .homepage { padding: 1rem; }
+  .intro-block { padding: 1.5rem; }
+  .cover-img { max-height: 200px; }
+  .profile-img { max-width: 100%; }
+}

@@ -1,0 +1,15 @@
+{
+  "random_seed": 606,
+  "n_rows": 150,
+  "columns": [
+    "X",
+    "Sin",
+    "Cos",
+    "HistData"
+  ],
+  "dataset_path": "../data/P09_synthetic_dataset.csv",
+  "generated_at": "2025-09-05T12:41:07.804155Z",
+  "result_images": [
+    "P09_plot1.png"
+  ]
+}
