@@ -9,16 +9,16 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // --- Deployment (GitHub Pages) ---
-  url: 'https://aakashchatake.github.io', // Your GitHub Pages base URL
-  baseUrl: '/dan-site/',                  // Project sub-path
+  url: 'https://aakashchatake.github.io', // GitHub Pages base URL
+  baseUrl: '/dan-site/',                  // Subpath for this project
   organizationName: 'aakashchatake',      // GitHub username/org
   projectName: 'dan-site',                // Repo name
 
-  // Build/link behavior (gentle during setup)
+  // --- Build behavior ---
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // i18n (single locale)
+  // --- Internationalization ---
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -31,10 +31,9 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // serve docs at root (i.e., /dan-site/)
-          // editUrl: 'https://github.com/aakashchatake/dan-site/edit/main/', // optional
+          routeBasePath: '/', // Serve docs at root (/unit01, /assessments, etc.)
         },
-        blog: false, // no blog for now
+        blog: false, // Blog disabled
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -44,9 +43,9 @@ const config = {
 
   // --- Theme / UI ---
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg', // social share image (optional)
+    image: 'img/docusaurus-social-card.jpg', // Social card image
     colorMode: {
-      respectPrefersColorScheme: true, // auto light/dark
+      respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Data Analytics Portal',
@@ -55,15 +54,22 @@ const config = {
         src: 'img/Mindforgeai-logo.png',
       },
       items: [
-        // Shows the full docs sidebar at root (since routeBasePath: '/')
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Units',
         },
-        { href: 'https://mindforgeai.wordpress.com/about/', label: 'Mindforge', position: 'left' },
-        { href: 'https://github.com/aakashchatake', label: 'GitHub', position: 'right' },
+        {
+          href: 'https://mindforgeai.wordpress.com/about/',
+          label: 'Mindforge',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/aakashchatake',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -71,9 +77,7 @@ const config = {
       links: [
         {
           title: 'Resources',
-          items: [
-            { label: 'Units', to: '/' }, // docs root
-          ],
+          items: [{ label: 'Units', to: '/' }],
         },
         {
           title: 'Community',
