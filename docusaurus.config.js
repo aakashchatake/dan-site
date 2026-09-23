@@ -43,7 +43,7 @@ const config = {
 
   // --- Theme / UI ---
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg', // Social card image
+    image: 'img/approved-preview-20260924.jpg', // Social card image
     colorMode: {
       respectPrefersColorScheme: true,
     },
